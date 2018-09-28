@@ -1,1 +1,1 @@
-# fantasy_football
+# fantasy-football
