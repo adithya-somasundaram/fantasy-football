@@ -121,6 +121,6 @@ name.grid(row = 2, column = 1, sticky=W)
 
 Button(window, text="GO", width=2,  command = click) .grid(row=3, column=0, sticky=W) # GO button, runs function
 
-output = Text(window, width=20, height=4, wrap=WORD) # output box
+output = Text(window, width=25, height=4, wrap=WORD) # output box
 output.grid(row=4, column=0, sticky=W)
 window.mainloop() # run
