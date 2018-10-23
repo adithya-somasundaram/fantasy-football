@@ -112,22 +112,17 @@ window.geometry("500x300")
 
 Label (window, text="Fantasy Football Application", fg="black", font="none 12") .grid(row=0, column=1, sticky=W) # title
 
-Label (window, text="League:", fg="black", font="none 12") .grid(row=1, column=0, sticky=W) # week text box
-variable = StringVar(window)
-variable.set("PPR") # default value
-w = OptionMenu(window, variable, "PPR", "NON-PPR") .grid(row=1, column=1, sticky=W)
-
-Label (window, text="Week:", fg="black", font="none 12") .grid(row=2, column=0, sticky=W) # week text box
+Label (window, text="Week:", fg="black", font="none 12") .grid(row=1, column=0, sticky=W) # week text box
 variable1 = StringVar(window)
 variable1.set("1") # default value
-week = OptionMenu(window, variable1, "1", "2", "3", "4", "5", "6") .grid(row=2, column=1, sticky=W)
+week = OptionMenu(window, variable1, "1", "2", "3", "4", "5", "6", "7", "8") .grid(row=1, column=1, sticky=W)
 
-Label (window, text="Enter the player's name:", fg="black", font="none 12") .grid(row=3, column=0, sticky=W) # name text box
+Label (window, text="Enter the player's name:", fg="black", font="none 12") .grid(row=2, column=0, sticky=W) # name text box
 name = Entry(window, width=15) # input 2
-name.grid(row = 3, column = 1, sticky=W)
+name.grid(row = 2, column = 1, sticky=W)
 
-Button(window, text="GO", width=2,  command = click) .grid(row=3, column=2, sticky=W) # GO button, runs function
+Button(window, text="GO", width=2,  command = click) .grid(row=2, column=2, sticky=W) # GO button, runs function
 
 output = Text(window, width=25, height=4, wrap=WORD) # output box
-output.grid(row=4, column=0, sticky=W)
+output.grid(row=3, column=0, sticky=W)
 window.mainloop() # run
