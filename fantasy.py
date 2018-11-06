@@ -142,7 +142,7 @@ Label (window, text="Fantasy Football Application", fg="black", font="none 12") 
 Label (window, text="Week:", fg="black", font="none 12") .grid(row=1, column=0, sticky=W) # week text box
 variable1 = StringVar(window)
 variable1.set("1") # default value
-week = OptionMenu(window, variable1, "1", "2", "3", "4", "5", "6", "7", "8", "9") .grid(row=1, column=1, sticky=W)
+week = OptionMenu(window, variable1, "1", "2", "3", "4", "5", "6", "7", "8", "9", "10") .grid(row=1, column=1, sticky=W)
 
 Label (window, text="Enter the player's name:", fg="black", font="none 12") .grid(row=2, column=0, sticky=W) # name text box
 name1 = Entry(window, width=15) # input 2
